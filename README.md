@@ -95,14 +95,14 @@ Think **Obsidian for your AI agents** - a living knowledge graph where multiple 
 
 ### Key Innovations
 
-| Feature | Traditional Approach | Agent-MCP Approach | Impact |
+| <sub>Feature</sub> | <sub>Traditional Approach</sub> | <sub>Agent-MCP Approach</sub> | <sub>Impact</sub> |
 |---------|---------------------|-------------------|---------|
-| **Context Management** | Single large context window | Distributed knowledge graph + focused contexts | 10x reduction in hallucinations |
-| **Execution Model** | Sequential, single-threaded | Parallel, multi-agent | 5x faster development |
-| **Memory** | Session-based, volatile | Persistent, searchable RAG | 100% context retention |
-| **Specialization** | General-purpose agent | Role-specific agents | 3x higher code quality |
-| **Conflict Resolution** | Manual merge conflicts | Automatic file locking | Zero merge conflicts |
-| **Security** | Full codebase access | Minimal, task-specific access | Reduced attack surface |
+| <sub>**Context Management**</sub> | <sub>Single large context window</sub> | <sub>Distributed knowledge graph + focused contexts</sub> | <sub>10x reduction in hallucinations</sub> |
+| <sub>**Execution Model**</sub> | <sub>Sequential, single-threaded</sub> | <sub>Parallel, multi-agent</sub> | <sub>5x faster development</sub> |
+| <sub>**Memory**</sub> | <sub>Session-based, volatile</sub> | <sub>Persistent, searchable RAG</sub> | <sub>100% context retention</sub> |
+| <sub>**Specialization**</sub> | <sub>General-purpose agent</sub> | <sub>Role-specific agents</sub> | <sub>3x higher code quality</sub> |
+| <sub>**Conflict Resolution**</sub> | <sub>Manual merge conflicts</sub> | <sub>Automatic file locking</sub> | <sub>Zero merge conflicts</sub> |
+| <sub>**Security**</sub> | <sub>Full codebase access</sub> | <sub>Minimal, task-specific access</sub> | <sub>Reduced attack surface</sub> |
 
 ---
 
@@ -493,19 +493,19 @@ graph LR
 
 ### Technology Decision Matrix
 
-| Requirement | Technology | Alternative Considered | Why Chosen |
+| <sub>Requirement</sub> | <sub>Technology</sub> | <sub>Alternative Considered</sub> | <sub>Why Chosen</sub> |
 |------------|------------|----------------------|-----------|
-| **Async Runtime** | Python 3.10+ | Node.js | Better AI/ML ecosystem |
-| **Web Framework** | FastAPI/Starlette | Flask | Native async + WebSocket |
-| **Database** | SQLite + sqlite-vec | PostgreSQL + pgvector | Zero config + portable |
-| **Vector Search** | sqlite-vec | ChromaDB | Embedded + no separate service |
-| **LLM Provider** | OpenAI | Anthropic | Embedding API + reliability |
-| **Frontend Framework** | Next.js | SvelteKit | Maturity + ecosystem |
-| **State Management** | TanStack Query + Zustand | Redux | Simpler + less boilerplate |
-| **Styling** | Tailwind CSS | Styled Components | Utility-first + performance |
-| **Graph Viz** | Vis-Network | D3.js | Built-in physics + easier |
-| **Package Manager** | uv | pip | 10-100x faster |
-| **Protocol** | MCP | Custom | Standardization + ecosystem |
+| <sub>**Async Runtime**</sub> | <sub>Python 3.10+</sub> | <sub>Node.js</sub> | <sub>Better AI/ML ecosystem</sub> |
+| <sub>**Web Framework**</sub> | <sub>FastAPI/Starlette</sub> | <sub>Flask</sub> | <sub>Native async + WebSocket</sub> |
+| <sub>**Database**</sub> | <sub>SQLite + sqlite-vec</sub> | <sub>PostgreSQL + pgvector</sub> | <sub>Zero config + portable</sub> |
+| <sub>**Vector Search**</sub> | <sub>sqlite-vec</sub> | <sub>ChromaDB</sub> | <sub>Embedded + no separate service</sub> |
+| <sub>**LLM Provider**</sub> | <sub>OpenAI</sub> | <sub>Anthropic</sub> | <sub>Embedding API + reliability</sub> |
+| <sub>**Frontend Framework**</sub> | <sub>Next.js</sub> | <sub>SvelteKit</sub> | <sub>Maturity + ecosystem</sub> |
+| <sub>**State Management**</sub> | <sub>TanStack Query + Zustand</sub> | <sub>Redux</sub> | <sub>Simpler + less boilerplate</sub> |
+| <sub>**Styling**</sub> | <sub>Tailwind CSS</sub> | <sub>Styled Components</sub> | <sub>Utility-first + performance</sub> |
+| <sub>**Graph Viz**</sub> | <sub>Vis-Network</sub> | <sub>D3.js</sub> | <sub>Built-in physics + easier</sub> |
+| <sub>**Package Manager**</sub> | <sub>uv</sub> | <sub>pip</sub> | <sub>10-100x faster</sub> |
+| <sub>**Protocol**</sub> | <sub>MCP</sub> | <sub>Custom</sub> | <sub>Standardization + ecosystem</sub> |
 
 ---
 
@@ -1011,38 +1011,38 @@ graph TB
 
 ### Feature Matrix
 
-| Category | Feature | Status | Description | Impact |
+| <sub>Category</sub> | <sub>Feature</sub> | <sub>Status</sub> | <sub>Description</sub> | <sub>Impact</sub> |
 |----------|---------|--------|-------------|--------|
-| **Agent Management** | Multi-Agent Orchestration | ✅ Stable | Coordinate up to 10 specialized agents | 5x development speed |
-| | Automatic Lifecycle | ✅ Stable | Spawn, monitor, cleanup agents | Zero manual management |
-| | Role Specialization | ✅ Stable | Backend, Frontend, Test, DevOps, Research | 3x code quality |
-| | Resource Limits | ✅ Stable | Hard cap at 10 concurrent agents | Predictable performance |
-| **Task System** | Dependency Resolution | ✅ Stable | DAG-based task ordering | Zero integration issues |
-| | Priority Queuing | ✅ Stable | Intelligent task prioritization | Optimal resource usage |
-| | Parallel Execution | ✅ Stable | Independent tasks run simultaneously | 68% time reduction |
-| | Status Tracking | ✅ Stable | Real-time progress monitoring | Complete visibility |
-| **Knowledge** | RAG System | ✅ Stable | Retrieval-Augmented Generation | 100% context retention |
-| | Vector Search | ✅ Stable | Semantic similarity via sqlite-vec | Sub-second queries |
-| | Code Indexing | ✅ Stable | Automatic embedding generation | Instant context access |
-| | Pattern Learning | ✅ Stable | Learn from past implementations | Consistent quality |
-| **Safety** | File Locking | ✅ Stable | Distributed file-level locks | Zero conflicts |
-| | Deadlock Prevention | ✅ Stable | Timeout-based recovery | 100% availability |
-| | Transaction Safety | ✅ Stable | SQLite ACID properties | Data integrity |
-| | Audit Logging | ✅ Stable | Complete activity history | Full traceability |
-| **UI/UX** | Real-time Dashboard | ✅ Stable | Next.js 15 + React 19 | Live monitoring |
-| | Network Visualization | ✅ Stable | Interactive agent graph | Visual collaboration |
-| | Memory Bank | ✅ Stable | Searchable knowledge base | Context discovery |
-| | Activity Timeline | ✅ Stable | Chronological agent actions | Debug support |
-| **Integration** | MCP Protocol | ✅ Stable | Standard AI assistant integration | Universal compatibility |
-| | Claude Desktop | ✅ Stable | Native support | One-click setup |
-| | Cursor IDE | ✅ Stable | Direct integration | In-editor workflow |
-| | Git Worktrees | ✅ Stable | Parallel branch work | No conflicts |
-| | Tmux Sessions | ✅ Stable | Persistent terminals | Survives disconnects |
-| | Playwright | ✅ Stable | Browser automation | Visual testing |
-| **Future** | Multi-LLM Support | 🔄 Planned | Anthropic, Google, Local models | Provider choice |
-| | Plugin System | 🔄 Planned | Custom agent types | Extensibility |
-| | Advanced Analytics | 🔄 Planned | Performance insights | Optimization data |
-| | Enterprise SSO | 🔄 Planned | SAML/OAuth integration | Team deployment |
+| <sub>**Agent Management**</sub> | <sub>Multi-Agent Orchestration</sub> | <sub>✅ Stable</sub> | <sub>Coordinate up to 10 specialized agents</sub> | <sub>5x development speed</sub> |
+|  | <sub>Automatic Lifecycle</sub> | <sub>✅ Stable</sub> | <sub>Spawn, monitor, cleanup agents</sub> | <sub>Zero manual management</sub> |
+|  | <sub>Role Specialization</sub> | <sub>✅ Stable</sub> | <sub>Backend, Frontend, Test, DevOps, Research</sub> | <sub>3x code quality</sub> |
+|  | <sub>Resource Limits</sub> | <sub>✅ Stable</sub> | <sub>Hard cap at 10 concurrent agents</sub> | <sub>Predictable performance</sub> |
+| <sub>**Task System**</sub> | <sub>Dependency Resolution</sub> | <sub>✅ Stable</sub> | <sub>DAG-based task ordering</sub> | <sub>Zero integration issues</sub> |
+|  | <sub>Priority Queuing</sub> | <sub>✅ Stable</sub> | <sub>Intelligent task prioritization</sub> | <sub>Optimal resource usage</sub> |
+|  | <sub>Parallel Execution</sub> | <sub>✅ Stable</sub> | <sub>Independent tasks run simultaneously</sub> | <sub>68% time reduction</sub> |
+|  | <sub>Status Tracking</sub> | <sub>✅ Stable</sub> | <sub>Real-time progress monitoring</sub> | <sub>Complete visibility</sub> |
+| <sub>**Knowledge**</sub> | <sub>RAG System</sub> | <sub>✅ Stable</sub> | <sub>Retrieval-Augmented Generation</sub> | <sub>100% context retention</sub> |
+|  | <sub>Vector Search</sub> | <sub>✅ Stable</sub> | <sub>Semantic similarity via sqlite-vec</sub> | <sub>Sub-second queries</sub> |
+|  | <sub>Code Indexing</sub> | <sub>✅ Stable</sub> | <sub>Automatic embedding generation</sub> | <sub>Instant context access</sub> |
+|  | <sub>Pattern Learning</sub> | <sub>✅ Stable</sub> | <sub>Learn from past implementations</sub> | <sub>Consistent quality</sub> |
+| <sub>**Safety**</sub> | <sub>File Locking</sub> | <sub>✅ Stable</sub> | <sub>Distributed file-level locks</sub> | <sub>Zero conflicts</sub> |
+|  | <sub>Deadlock Prevention</sub> | <sub>✅ Stable</sub> | <sub>Timeout-based recovery</sub> | <sub>100% availability</sub> |
+|  | <sub>Transaction Safety</sub> | <sub>✅ Stable</sub> | <sub>SQLite ACID properties</sub> | <sub>Data integrity</sub> |
+|  | <sub>Audit Logging</sub> | <sub>✅ Stable</sub> | <sub>Complete activity history</sub> | <sub>Full traceability</sub> |
+| <sub>**UI/UX**</sub> | <sub>Real-time Dashboard</sub> | <sub>✅ Stable</sub> | <sub>Next.js 15 + React 19</sub> | <sub>Live monitoring</sub> |
+|  | <sub>Network Visualization</sub> | <sub>✅ Stable</sub> | <sub>Interactive agent graph</sub> | <sub>Visual collaboration</sub> |
+|  | <sub>Memory Bank</sub> | <sub>✅ Stable</sub> | <sub>Searchable knowledge base</sub> | <sub>Context discovery</sub> |
+|  | <sub>Activity Timeline</sub> | <sub>✅ Stable</sub> | <sub>Chronological agent actions</sub> | <sub>Debug support</sub> |
+| <sub>**Integration**</sub> | <sub>MCP Protocol</sub> | <sub>✅ Stable</sub> | <sub>Standard AI assistant integration</sub> | <sub>Universal compatibility</sub> |
+|  | <sub>Claude Desktop</sub> | <sub>✅ Stable</sub> | <sub>Native support</sub> | <sub>One-click setup</sub> |
+|  | <sub>Cursor IDE</sub> | <sub>✅ Stable</sub> | <sub>Direct integration</sub> | <sub>In-editor workflow</sub> |
+|  | <sub>Git Worktrees</sub> | <sub>✅ Stable</sub> | <sub>Parallel branch work</sub> | <sub>No conflicts</sub> |
+|  | <sub>Tmux Sessions</sub> | <sub>✅ Stable</sub> | <sub>Persistent terminals</sub> | <sub>Survives disconnects</sub> |
+|  | <sub>Playwright</sub> | <sub>✅ Stable</sub> | <sub>Browser automation</sub> | <sub>Visual testing</sub> |
+| <sub>**Future**</sub> | <sub>Multi-LLM Support</sub> | <sub>🔄 Planned</sub> | <sub>Anthropic, Google, Local models</sub> | <sub>Provider choice</sub> |
+|  | <sub>Plugin System</sub> | <sub>🔄 Planned</sub> | <sub>Custom agent types</sub> | <sub>Extensibility</sub> |
+|  | <sub>Advanced Analytics</sub> | <sub>🔄 Planned</sub> | <sub>Performance insights</sub> | <sub>Optimization data</sub> |
+|  | <sub>Enterprise SSO</sub> | <sub>🔄 Planned</sub> | <sub>SAML/OAuth integration</sub> | <sub>Team deployment</sub> |
 
 ---
 
